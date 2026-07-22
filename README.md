@@ -5,9 +5,7 @@
 [![Common Changelog](https://common-changelog.org/badge.svg)](https://common-changelog.org)
 ![Signed Commits](https://img.shields.io/badge/commits-signed-blue.svg)
 ![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)
-![Conventional Commits](https://img.shields.io/badge/commits-conventional-brightgreen.svg)
-![GitHub Pre-Release](https://img.shields.io/github/v/release/ninjamonkeygames/palette-controller?include_prereleases)
-![GitHub commit check runs](https://img.shields.io/github/check-runs/ninjamonkeygames/palette-controller/master)
+![GitHub Release](https://img.shields.io/github/v/release/NinjaMonkeyGames/REPLACE)
 
 ---
 
@@ -36,26 +34,25 @@
 
 ## WHAT IS THIS REPOSITORY FOR ?
 
-Generating maps for a 2D platformer.
+This project is designed to make it easier to produce levels for platform games.
 
 ---
 
 ## WHAT IS THE PURPOSE OF THIS PROJECT ?
 
-To provide a n easy to use tool to generate maps for a 2D platformer.
+To speed up future level design.
 
 ---
 
 ## WHO IS THIS REPOSITORY FOR ?
 
-Anyone who wishes to make a level for a 2D platformer game.
+Anyone who wished to generate content for a 2D platformer.
 
 ---
 
 ## QUICKSTART
 
-Simply create a new grid instance with the following `example = new grid();`. See `DEVELOPER.md` for
-details.
+...
 
 ## ENVIRONMENT DEPENDENCY MANIFESTO
 
@@ -63,15 +60,15 @@ details.
 
 #### VSC
 
-Version: 1.116.02821
-Commit: 221e0a382c0be3a673a4e4cab0601344a0b3de3a
-Date: 2026-04-15T00:28:13Z
-Electron: 39.8.7
+Version: 1.121.03429
+Commit: 824c4c46a288b839f13b24022655329c2aeb9f81
+Date: 2026-05-19T23:32:58Z
+Electron: 39.8.8
 ElectronBuildId: undefined
 Chromium: 142.0.7444.265
 Node.js: 22.22.1
 V8: 14.2.231.22-electron.0
-OS: Linux x64 6.12.85+deb13-amd64
+OS: Linux x64 6.12.94+deb13-amd64
 
 ##### VSC EXTENSIONS
 
@@ -79,13 +76,13 @@ OS: Linux x64 6.12.85+deb13-amd64
 | ----------------------------------------------------------------- | --------- |
 | streetsidesoftware.code-spell-checker                             | 4.5.6     |
 | streetsidesoftware.code-spell-checker-cspell-bundled-dictionaries | 2.0.14    |
-| github.vscode-github-actions                                      | 0.31.0    |
-| yzhang.markdown-all-in-one                                        | 3.6.3     |
-| davidanson.vscode-markdownlint                                    | 0.61.1    |
-| redhat.vscode-yaml                                                | 1.21.0    |
+| github.vscode-github-actions                                      | 0.32.1    |
+| yzhang.markdown-all-in-one                                        | 3.6.2     |
+| davidanson.vscode-markdownlint                                    | 0.61.2    |
+| redhat.vscode-yaml                                                | 1.23.0    |
 | joshbolduc.commitlint                                             | 2.6.3     |
-| dbaeumer.vscode-eslinT                                            | 3.0.24    |
-| fnando.linter                                                     | 0.0.19    |
+
+[ADD REMOVE EXTENSIONS AS REQUIRED. LISTED ABOVE ARE SOME BASIC ONES.]
 
 ### CI TOOLS
 
@@ -99,6 +96,7 @@ Tools versions used by CI and by extension the Dockerfile.
 | Markdownlint                          | 0.40.0                            |
 | Commitlint                            | 20.4.3                            |
 | Commitlint config-conventional        | 20.3.0                            |
+| gm-cli                                | 2.2.0                             |
 
 ### SUPPORTING TOOLS
 

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"spt_pure_functions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"spt_pure_functions",
+  "parent":{
+    "name":"level-editor",
+    "path":"level-editor.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
