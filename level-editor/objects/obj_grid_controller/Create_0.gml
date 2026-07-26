@@ -69,8 +69,6 @@ constructor
 	vbuff = -1;
 	cache_cursor = window_get_cursor();
 	
-	tile_data = [];
-	
 	/// @description Imported variables
 	
     x_offset									= _x_offset;
@@ -105,8 +103,6 @@ constructor
 
 	static set_grid = function()
 	{
-		tile_data = [];
-
 		// Free any previous buffer before rebuilding, otherwise each call leaks a buffer.
 		
 		if (vbuff != -1)
@@ -179,7 +175,6 @@ constructor
 	            }
 
 	            // Only build a column label (top edge) when this cell is in row 0.
-
 
 	            var _column_string	= "";
 	            var _label_column_x	= 0;
@@ -383,6 +378,9 @@ constructor
 		set_coords(); 
 		set_cursor();
 	}
+				
+	/// @function			draw
+    /// @description	Draw grid based on data stored in data structure.		
 				
     static draw = function() 
     {
