@@ -47,7 +47,7 @@ global.grid_vformat = undefined;	// Shared vertex format for all grid instances
 function grid
 (
 _x_offset = 64, _y_offset = 32, 
-_cell_width = 64, _cell_height = 64, 
+_cell_width = 256, _cell_height = 256, 
 _row_qty = 18, _column_qty = 24, 
 _label_text_type_row = false, _label_text_type_column = true,
 _grid_colour = c_white, _text_colour = c_white, _text_colour_selected = c_red, 
@@ -69,7 +69,7 @@ constructor
 	vbuff = -1;
 	cache_cursor = window_get_cursor();
 	
-	cell_data = [];
+	tile_data = [];
 	
 	/// @description Imported variables
 	
@@ -105,7 +105,7 @@ constructor
 
 	static set_grid = function()
 	{
-		cell_data = [];
+		tile_data = [];
 
 		// Free any previous buffer before rebuilding, otherwise each call leaks a buffer.
 		
@@ -379,22 +379,7 @@ constructor
     /// @description	Execute step code for grid constructor instance.
 	
     static step = function() 
-    {
-		if mouse_wheel_down()
-		{
-			zoom(true);
-		}
-		
-		if mouse_wheel_up()
-		{
-			zoom(false);
-		}
-		
-		if keyboard_check_pressed(vk_left)		then shift_x(-1);
-		if keyboard_check_pressed(vk_right)		then shift_x(1);
-		if keyboard_check_pressed(vk_up)			then shift_y(-1);
-		if keyboard_check_pressed(vk_down)	then shift_y(1);
-		
+    {	
 		set_coords(); 
 		set_cursor();
 	}
